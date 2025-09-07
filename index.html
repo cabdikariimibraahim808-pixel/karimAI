@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karim AI</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-container">
+        <svg class="logo" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="40" stroke="#0ff" stroke-width="4" fill="none"/>
+          <path d="M30 50 L50 30 L70 50 L50 70 Z" fill="#0ff"/>
+        </svg>
+        <h2>Karim AI</h2>
+      </div>
+      <button id="new-chat-btn">+ New Chat</button>
+      <div id="chat-list"></div>
+      <button id="clear-all-btn" class="danger-btn">Clear All</button>
+    </aside>
+    
+    <!-- Chat Area -->
+    <div class="chat-container">
+      <header class="chat-header">
+        <h1 id="chat-title">Welcome</h1>
+      </header>
+      
+      <div id="chat-history" class="chat-history">
+        <div class="welcome-screen">
+          <h2>👾 Welcome to Karim AI</h2>
+          <p>Your futuristic AI assistant is ready.</p>
+        </div>
+      </div>
+      
+      <div id="typing-indicator" class="typing-indicator hidden">
+        <span></span><span></span><span></span>
+      </div>
+      
+      <footer class="chat-footer">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-btn">Send</button>
+      </footer>
+    </div>
+    
+  </div>
+  <script src="chatbot.js"></script>
+</body>
+</html>
